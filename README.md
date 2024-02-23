@@ -16,4 +16,4 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 - [x] [Next.js](https://nextjs.org/)
 - [x] [TypeScript](https://www.typescriptlang.org/)
 - [x] [styled-components](https://styled-components.com/)
-- [ ] [Redux-toolkit](https://redux-toolkit.js.org/)
+- [x] [Redux-toolkit](https://redux-toolkit.js.org/)
