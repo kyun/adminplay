@@ -7,8 +7,8 @@ const Main = styled.main`
 `;
 export default function Home() {
   return (
-    <Main>Hello
-
+    <Main>
+      Hello
       <Button type="primary">Button</Button>
     </Main>
   );
