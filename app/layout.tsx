@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import StyledComponentsRegistry from './lib/styledRegistry'
 import StoreProvider from "./StoreProvider";
+import { AntdRegistry } from '@ant-design/nextjs-registry';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning={true}>
         <StoreProvider>
-          <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+          <AntdRegistry>
+            <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+          </AntdRegistry>
         </StoreProvider>
       </body>
     </html>

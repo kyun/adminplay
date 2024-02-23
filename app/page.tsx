@@ -1,4 +1,5 @@
 "use client";
+import { Button } from "antd";
 import styled from "styled-components";
 
 const Main = styled.main`
@@ -6,6 +7,9 @@ const Main = styled.main`
 `;
 export default function Home() {
   return (
-    <Main>Hello</Main>
+    <Main>Hello
+
+      <Button type="primary">Button</Button>
+    </Main>
   );
 }
